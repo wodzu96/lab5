@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Sample.h"
 /*
 - Stwórz klasę `Dataset`, zawierającą:
     - wektor obiektów klasy `Sample`,
@@ -8,5 +8,8 @@
 */
 
 class Dataset {
-	
+	public:
+		bool push_back(Sample* Sample);
+		std::vector <Sample*> vecSample;
+		
 };

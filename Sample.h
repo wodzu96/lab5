@@ -1,5 +1,7 @@
 #pragma once
-
+#include <iostream>
+#include <string>
+#include <vector>
 /*
 - Stwórz klasę `Sample`, zawierającą:
     - zmienną całkowitą `label`,
@@ -9,5 +11,14 @@
 */
 
 class Sample {
+	private:
+		int label;
+		std::vector <float> features;
+	public:
+		Sample(std::vector <float> features, int label);
+		virtual int get_label();
+		std::vector <float> get_features();
+		
+		
 	
 };
